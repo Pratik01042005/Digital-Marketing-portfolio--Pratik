@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: light;
+    background-color: #F5F2EA;
+    color: #111111;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    max-width: 100vw;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    overflow-x: hidden;
+    max-width: 100vw;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F5F2EA;
+    color: #111111;
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: 'Playfair Display', 'DM Serif Display', Georgia, serif;
+  }
+
+  *, ::before, ::after {
+    box-sizing: border-box;
+  }
+}
+
+/* Custom Scrollbar for Editorial Theme */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F2EA;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8D3C5;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF5A1F;
+}
+
+/* Editorial Card & Container Utilities */
+.editorial-card {
+  background-color: #FAF8F3;
+  border: 1px solid #E2DDD0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.editorial-card:hover {
+  border-color: #FF5A1F;
+  box-shadow: 0 10px 30px rgba(255, 90, 31, 0.08);
+  transform: translateY(-2px);
+}
+
+.editorial-card-dark {
+  background-color: #111111;
+  color: #F5F2EA;
+  border: 1px solid #282828;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.gradient-text {
+  color: #111111;
+}
+
+.editorial-serif {
+  font-family: 'Playfair Display', 'DM Serif Display', Georgia, serif;
+}
+
+.editorial-sans {
+  font-family: 'Inter', 'Manrope', sans-serif;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
